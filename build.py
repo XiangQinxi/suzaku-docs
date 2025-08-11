@@ -9,3 +9,7 @@ if __name__ == '__main__':
     system(
         "make html"
     )
+
+    system(
+        "make singlehtml"
+    )
