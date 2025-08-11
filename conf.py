@@ -21,7 +21,9 @@ extensions = [
     "sphinx.ext.autosummary",
     "sphinx.ext.intersphinx",
     "sphinx.ext.autosectionlabel",
-    "myst_parser"  # Markdown parser
+    "sphinx_inline_tabs",
+    "myst_parser",  # Markdown parser
+    "sphinx.ext.ifconfig",
 ]
 
 templates_path = ["_templates"]
@@ -33,6 +35,10 @@ source_suffix = {
     ".md": "markdown",
 }
 
+languages = {
+    'en': 'English',
+    'zh_CN': '中文(简体)',
+}
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

@@ -9,6 +9,7 @@
         <title>Suzauku 0.0.2a3 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=25af2a20" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
     
     
@@ -198,14 +199,18 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="#document-api/index">Suzaku API</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Suzaku API</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="#document-api/base/index">base</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of base</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="#document-getstarted/index">Get started</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Get started</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="#document-getstarted/zh-hans">中文</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="#document-api/index">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of API Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="#document-api/base/index">base</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of base</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="#document-api/base/appbase">appbase.py</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#document-api/base/windowbase">windowbase.py</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#document-api/base/container">container.py</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="#document-api/widgets/index">widgets</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of widgets</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="#document-api/widgets/index">widgets</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of widgets</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="#document-api/widgets/app">app.py</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#document-api/widgets/button">button.md</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#document-api/widgets/widget">widget.py</a></li>
@@ -255,8 +260,56 @@
 <h1>Suzaku documentation<a class="headerlink" href="#suzaku-documentation" title="Link to this heading">¶</a></h1>
 <p>Welcome to the documentation for Suzaku.</p>
 <div class="toctree-wrapper compound">
-<span id="document-api/index"></span><section id="suzaku-api">
-<h2>Suzaku API<a class="headerlink" href="#suzaku-api" title="Link to this heading">¶</a></h2>
+<span id="document-getstarted/index"></span><section id="get-started">
+<h2>Get started<a class="headerlink" href="#get-started" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<span id="document-getstarted/zh-hans"></span><section id="id1">
+<h3>中文<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<section id="id2">
+<h4>下载与安装<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h4>
+<p>第一步是下载<code class="docutils literal notranslate"><span class="pre">Suzaku</span></code>。您可以通过<code class="docutils literal notranslate"><span class="pre">pip</span></code>轻松下载：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>suzaku
+</pre></div>
+</div>
+<p>但请注意，<code class="docutils literal notranslate"><span class="pre">Suzaku</span></code>依赖于<code class="docutils literal notranslate"><span class="pre">pyopengl</span></code>、<code class="docutils literal notranslate"><span class="pre">skia-python</span></code>和<code class="docutils literal notranslate"><span class="pre">glfw</span></code>库。</p>
+<p><code class="docutils literal notranslate"><span class="pre">Linux</span></code>用户可能需要运行<code class="docutils literal notranslate"><span class="pre">apt</span> <span class="pre">install</span> <span class="pre">libglfw3</span></code>来安装<code class="docutils literal notranslate"><span class="pre">glfw</span></code>库。</p>
+<p>运行<code class="docutils literal notranslate"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">libfontconfig1</span> <span class="pre">libgl1-mesa-glx</span> <span class="pre">libgl1-mesa-egl</span> <span class="pre">libegl1</span> <span class="pre">libglvnd0</span> <span class="pre">libgl1-mesa-dri</span></code>来安装<code class="docutils literal notranslate"><span class="pre">skia-python</span></code>的依赖项。</p>
+</section>
+<section id="id3">
+<h4>示例<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h4>
+<p>安装完成后，您可以通过运行<code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">suzaku</span></code>来启动<code class="docutils literal notranslate"><span class="pre">Suzaku</span></code>。</p>
+</section>
+<section id="requirements-txt">
+<h4>requirements.txt<a class="headerlink" href="#requirements-txt" title="Link to this heading">¶</a></h4>
+<p><a class="reference external" href="https://pypi.org/project/PyOpenGL/">PyOpenGL</a>
+<a class="reference external" href="https://pypi.org/project/skia-python/">skia-python</a>
+<a class="reference external" href="https://pypi.org/project/glfw/">glfw</a></p>
+</section>
+</section>
+</div>
+<section id="download-install">
+<h3>Download &amp; Install<a class="headerlink" href="#download-install" title="Link to this heading">¶</a></h3>
+<p>The first step is to download <code class="docutils literal notranslate"><span class="pre">Suzaku</span></code>. You can easily download it using <code class="docutils literal notranslate"><span class="pre">pip</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>suzaku
+</pre></div>
+</div>
+<p>But note that <code class="docutils literal notranslate"><span class="pre">Suzaku</span></code> depends on <code class="docutils literal notranslate"><span class="pre">pyopengl</span></code>, <code class="docutils literal notranslate"><span class="pre">skia-python</span></code>, and <code class="docutils literal notranslate"><span class="pre">glfw</span></code> libraries.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Linux</span></code> users may need to run <code class="docutils literal notranslate"><span class="pre">apt</span> <span class="pre">install</span> <span class="pre">libglfw3</span></code> to install <code class="docutils literal notranslate"><span class="pre">glfw</span></code> library.</p>
+<p><code class="docutils literal notranslate"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">libfontconfig1</span> <span class="pre">libgl1-mesa-glx</span> <span class="pre">libgl1-mesa-egl</span> <span class="pre">libegl1</span> <span class="pre">libglvnd0</span> <span class="pre">libgl1-mesa-dri</span></code> to install <code class="docutils literal notranslate"><span class="pre">skia-python</span></code> dependencies.</p>
+</section>
+<section id="example">
+<h3>Example<a class="headerlink" href="#example" title="Link to this heading">¶</a></h3>
+<p>After that, you can run <code class="docutils literal notranslate"><span class="pre">Suzaku</span></code> by running <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">suzaku</span></code>.</p>
+</section>
+<section id="requirements-txt">
+<h3>requirements.txt<a class="headerlink" href="#requirements-txt" title="Link to this heading">¶</a></h3>
+<p><a class="reference external" href="https://pypi.org/project/PyOpenGL/">PyOpenGL</a>
+<a class="reference external" href="https://pypi.org/project/skia-python/">skia-python</a>
+<a class="reference external" href="https://pypi.org/project/glfw/">glfw</a></p>
+</section>
+</section>
+<span id="document-api/index"></span><section id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Link to this heading">¶</a></h2>
 <div class="toctree-wrapper compound">
 <span id="document-api/base/index"></span><section id="base">
 <h3>base<a class="headerlink" href="#base" title="Link to this heading">¶</a></h3>
@@ -1410,5 +1463,6 @@ False -&gt; Hide the window</p>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="_static/tabs.js?v=3ee01567"></script>
     </body>
 </html>

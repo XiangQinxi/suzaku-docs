@@ -5,7 +5,8 @@ Welcome to the documentation for Suzaku.
 ```{eval-rst}
 .. toctree::
    :maxdepth: 2
-
+   
+   getstarted/index
    api/index
 ```
 

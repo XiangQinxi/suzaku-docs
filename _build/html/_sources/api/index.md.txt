@@ -1,4 +1,4 @@
-# Suzaku API
+# API Reference
 
 ```{eval-rst}
 .. toctree::
