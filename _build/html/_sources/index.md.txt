@@ -7,6 +7,8 @@ Welcome to the documentation for Suzaku.
    :maxdepth: 2
    
    getstarted/index
+   basic/index
+   how_it_works/index
    api/index
 ```
 

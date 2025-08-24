@@ -9,7 +9,7 @@
 project = "Suzauku"
 copyright = "2025, XiangQinxi"
 author = "XiangQinxi"
-release = "0.0.2a3"
+release = "0.0.8"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -24,7 +24,13 @@ extensions = [
     "sphinx_inline_tabs",
     "myst_parser",  # Markdown parser
     "sphinx.ext.ifconfig",
+    'sphinx.ext.graphviz',
+    'sphinx.ext.inheritance_diagram',
 ]
+
+# 指定 graphviz 输出格式（推荐 SVG 或 PNG）
+graphviz_output_format = 'svg'
+
 
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
