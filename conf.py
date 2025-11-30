@@ -9,7 +9,7 @@
 project = "Suzauku"
 copyright = "2025, XiangQinxi"
 author = "XiangQinxi"
-release = "0.0.8"
+release = "0.1.9"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -42,7 +42,6 @@ source_suffix = {
 }
 
 languages = {
-    'en': 'English',
     'zh_CN': '中文(简体)',
 }
 
