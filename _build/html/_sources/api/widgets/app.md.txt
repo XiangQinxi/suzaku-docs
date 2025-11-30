@@ -1,0 +1,8 @@
+# app.py
+
+```{eval-rst}
+.. automodule:: suzaku.widgets.app
+    :members:
+    :noindex:
+    :undoc-members:
+```
